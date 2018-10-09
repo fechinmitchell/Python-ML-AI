@@ -13,8 +13,9 @@ Third Step: Run the code below line by line to see how the decision tree works, 
 
 
 ln[1]:    from sklearn import tree
-
-ln[2]:    clf = tree.DecisionTreeClassifier()
+          
+ln[2]:    #Calling Decision Tree Classifier
+          clf = tree.DecisionTreeClassifier()
 
 ln[3]:    #Height, Weight, Shoe Size
           
@@ -22,11 +23,15 @@ ln[3]:    #Height, Weight, Shoe Size
           [190, 90, 47], [175, 64, 39],
           [177, 70, 40], [159, 55, 37], [171, 75, 42], [181, 85, 43]]
 
-ln[4]:    Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
+ln[4]:    #Labels
+          
+          Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
           'female', 'male', 'male']
 
-ln[5]:    clf = clf.fit(X, Y)
+ln[5]:    #Training Classfier on Data 
+          clf = clf.fit(X, Y)
 
-ln[6]:    prediction = clf.predict([[180, 70, 43]])
+ln[6]:    #Prediction based on following Data
+          prediction = clf.predict([[180, 70, 43]])
       
 ln[7]:    print(prediction)
