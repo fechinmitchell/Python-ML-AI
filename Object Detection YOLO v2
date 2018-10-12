@@ -1,0 +1,47 @@
+This is the method I used running the YOLO object detection algorithm on MacOS.
+This method was done with the help of the https://github.com/llSourcell/YOLO_Object_Detection github repo.
+Also used the link - https://keponk.wordpress.com/2017/12/07/siraj-darkflow/ which was the key to getting it to work.
+
+You will need Anaconda installed on your machine, which will aid in the process of getting it setup and also being a powerful tool for python and machine learning users.
+
+Step 1: Clone the repo - https://github.com/thtrieu/darkflow
+
+Step 2: Creating a conda virtual enviroment for the project 
+        
+        conda create -n NAME python=3.6
+
+Step 3: Accessing the new enviroment
+
+        source activate NAME
+
+Step 4: Installing dependencies 
+
+        conda install tensorflow cython numpy
+
+Step 5: Add the repo with the magic opencv version
+        
+        conda config --add channels conda-forge
+
+Step 6: Installing the opencv library
+
+        conda install opencv
+
+Step 7: Build the Library
+
+        python3 setup.py build_ext --inplace
+
+Step 8: You will need to donwload the YOLOv2 608x608 weights file here (https://pjreddie.com/darknet/yolov2/)
+
+Step 9: Create a bin folder in the darkflow-master and put the weights in it.
+
+        mkdir bin #while being in the darkflow folder
+        
+Step 10: Get a video which you would like to render and process with the YOLOv2 object detection method and put it in the darkflow folder
+
+Step 11: Use the following to start the process.
+
+         python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo
+         
+Step 12: This was the Result.
+
+         
