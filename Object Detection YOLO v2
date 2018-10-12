@@ -43,4 +43,3 @@ Step 11: Use the following to start the process.
          python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo
          
 Step 12: This was the Result.
-https://github.com/fechinmitchell/Python-ML-AI/blob/master/Screen%20Shot%202018-10-12%20at%2011.13.58%20PM.png?raw=true
