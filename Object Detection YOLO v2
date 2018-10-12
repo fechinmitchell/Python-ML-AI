@@ -42,4 +42,4 @@ Step 11: Use the following to start the process.
 
          python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo
          
-Step 12: This was the Result.
+Step 12: The Result is on the main page in the repo.
