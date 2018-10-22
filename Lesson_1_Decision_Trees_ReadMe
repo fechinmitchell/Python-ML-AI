@@ -8,3 +8,4 @@ First Step: Make sure Python is available for use on your operating systems, Win
 Second Step: Use text editor like sublime text or the one I like to use is Jupyter Notebook which is run from the terminal when you type "jupyter notebook".
 
 Third Step: Run the code below line by line to see how the decision tree works, use different values in the in the prediction line to verify the code is running correctly.
+
