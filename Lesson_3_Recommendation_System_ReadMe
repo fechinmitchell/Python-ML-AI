@@ -1,0 +1,9 @@
+For this small project the aim was to create a recommendation system for movies. Recommendation algorithms are useful as they learn are preferences over time and influence our decisions. This is a content based system which means it relys on what you've liked in the past to make its decisions. LightFM is used to perform a number of popular recommendation algorithms.
+
+Step 1: pip install lightfm to get the dataset needed.
+
+Step 2: pip install numpy to adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
+Step 3: pip install scipy also used to perform mathematical methods used for the algorithms in the program.
+
+Step 4: Go through the code which is posted in the repo line by line reading the comments above to make sure you are understanding what is happening.
